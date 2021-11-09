@@ -1,0 +1,4 @@
+﻿  은행 상속.cpp
+C:\정호일\chapter.08.polymorphism\은행\은행 상속.cpp(101,26): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\정호일\chapter.08.polymorphism\은행\은행 상속.cpp(123,26): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  은행.vcxproj -> C:\정호일\chapter.08.polymorphism\Debug\은행 상속.exe
