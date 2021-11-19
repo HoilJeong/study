@@ -1,0 +1,4 @@
+﻿  예외 던지기.cpp
+C:\정호일\chapter.10.OverloadingOperation\예외 던지기\예외 던지기.cpp(20,13): warning C4101: 'expn' :참조되지 않은 지역 변수입니다.
+C:\정호일\chapter.10.OverloadingOperation\예외 던지기\예외 던지기.cpp(34,13): warning C4101: 'expn' :참조되지 않은 지역 변수입니다.
+  예외 던지기.vcxproj -> C:\정호일\chapter.10.OverloadingOperation\Debug\예외 던지기.exe

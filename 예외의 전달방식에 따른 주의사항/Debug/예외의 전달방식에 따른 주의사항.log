@@ -1,0 +1,5 @@
+﻿  예외의 전달방식에 따른 주의사항.cpp
+C:\정호일\chapter.10.OverloadingOperation\예외의 전달방식에 따른 주의사항\예외의 전달방식에 따른 주의사항.cpp(53,2): warning C4286: 'BBB &': 기본 클래스('AAA &')에 의해 줄 48에서 catch되었습니다.
+C:\정호일\chapter.10.OverloadingOperation\예외의 전달방식에 따른 주의사항\예외의 전달방식에 따른 주의사항.cpp(58,2): warning C4286: 'CCC &': 기본 클래스('AAA &')에 의해 줄 48에서 catch되었습니다.
+C:\정호일\chapter.10.OverloadingOperation\예외의 전달방식에 따른 주의사항\예외의 전달방식에 따른 주의사항.cpp(58,2): warning C4286: 'CCC &': 기본 클래스('BBB &')에 의해 줄 53에서 catch되었습니다.
+  예외의 전달방식에 따른 주의사항.vcxproj -> C:\정호일\chapter.10.OverloadingOperation\Debug\예외의 전달방식에 따른 주의사항.exe
