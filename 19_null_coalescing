@@ -1,0 +1,28 @@
+using System;
+
+// null 병합 연산자
+// 변수 / 객체의 null 검사를 간결하게 만들어주는 역할
+// ?? 연산자는 두 개의 피연산자를 받아들이고 왼쪽 피연산자가 null 인지 평가
+// 왼쪽 피연산자가 null 이 아니면 왼쪽 피연산자 반환
+// 왼쪽 피연산자가 null 이면 오른쪽 피연산자 반환
+
+namespace _19_null_coalescing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int? num = null; // int? : Nullable Type
+            Console.WriteLine($"{num ?? 0}"); // 0
+
+            num = 99;
+            Console.WriteLine($"{num ?? 0}"); // 9
+
+            string str = null;
+            Console.WriteLine($"{str ?? "Default"}"); // Default
+
+            str = "Specific";
+            Console.WriteLine($"{str ?? "Default"}"); // Specific
+        }
+    }
+}
