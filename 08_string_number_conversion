@@ -1,0 +1,29 @@
+using System;
+
+namespace _08_string_number_conversion
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // ToString : 문자열로 변환
+            int a = 123;
+            string b = a.ToString();
+            Console.WriteLine(b); // 123
+
+            float c = 3.14f;
+            string d = c.ToString();
+            Console.WriteLine(d); // 3.14
+
+            // ToInt32 : 정수 타입으로
+            string e = "123456";
+            int f = Convert.ToInt32(e);
+            Console.WriteLine(f); // 123456
+
+            // Parse : 숫자로 변환
+            string g = "1.2345";
+            float h = float.Parse(g);
+            Console.WriteLine(h); // 1.2345
+        }
+    }
+}
