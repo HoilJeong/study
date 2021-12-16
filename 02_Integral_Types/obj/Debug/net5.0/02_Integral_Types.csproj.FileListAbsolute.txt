@@ -1,0 +1,16 @@
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\bin\Debug\net5.0\02_Integral_Types.exe
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\bin\Debug\net5.0\02_Integral_Types.deps.json
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\bin\Debug\net5.0\02_Integral_Types.runtimeconfig.json
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\bin\Debug\net5.0\02_Integral_Types.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\bin\Debug\net5.0\02_Integral_Types.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\bin\Debug\net5.0\ref\02_Integral_Types.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\bin\Debug\net5.0\02_Integral_Types.pdb
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\02_Integral_Types.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\02_Integral_Types.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\02_Integral_Types.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\02_Integral_Types.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\02_Integral_Types.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\02_Integral_Types.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\ref\02_Integral_Types.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\02_Integral_Types.pdb
+C:\Users\Administrator\source\repos\ConsoleApp27\02_Integral_Types\obj\Debug\net5.0\02_Integral_Types.genruntimeconfig.cache

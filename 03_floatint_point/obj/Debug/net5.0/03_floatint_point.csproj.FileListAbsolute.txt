@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\bin\Debug\net5.0\03_floatint_point.exe
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\bin\Debug\net5.0\03_floatint_point.deps.json
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\bin\Debug\net5.0\03_floatint_point.runtimeconfig.json
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\bin\Debug\net5.0\03_floatint_point.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\bin\Debug\net5.0\03_floatint_point.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\bin\Debug\net5.0\ref\03_floatint_point.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\bin\Debug\net5.0\03_floatint_point.pdb
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\obj\Debug\net5.0\03_floatint_point.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\obj\Debug\net5.0\03_floatint_point.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\obj\Debug\net5.0\03_floatint_point.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\obj\Debug\net5.0\03_floatint_point.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\obj\Debug\net5.0\03_floatint_point.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\obj\Debug\net5.0\ref\03_floatint_point.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\obj\Debug\net5.0\03_floatint_point.pdb
+C:\Users\Administrator\source\repos\ConsoleApp27\03_floatint_point\obj\Debug\net5.0\03_floatint_point.genruntimeconfig.cache

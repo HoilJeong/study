@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\bin\Debug\net5.0\05_object.exe
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\bin\Debug\net5.0\05_object.deps.json
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\bin\Debug\net5.0\05_object.runtimeconfig.json
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\bin\Debug\net5.0\05_object.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\bin\Debug\net5.0\05_object.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\bin\Debug\net5.0\ref\05_object.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\bin\Debug\net5.0\05_object.pdb
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\obj\Debug\net5.0\05_object.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\obj\Debug\net5.0\05_object.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\obj\Debug\net5.0\05_object.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\obj\Debug\net5.0\05_object.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\obj\Debug\net5.0\05_object.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\obj\Debug\net5.0\ref\05_object.dll
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\obj\Debug\net5.0\05_object.pdb
+C:\Users\Administrator\source\repos\ConsoleApp27\05_object\obj\Debug\net5.0\05_object.genruntimeconfig.cache
