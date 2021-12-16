@@ -1,0 +1,34 @@
+using System;
+
+namespace _14_string_concat
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string userName = "bikang";
+            string date = DateTime.Today.ToShortDateString(); // 현재 날짜
+
+            // 1. '+' 연산자 사용
+            string strPlus = "Hello " + userName + ", Today is " + date + ".";
+            Console.WriteLine(strPlus); // Hello bikang, Today is 2021-12-16.
+
+            // 2. String.Format 사용 : 순차적인 숫자로 매개변수를 표시
+            string strFormat = String.Format("Hello {0}, Today is {1}", userName, date);
+            Console.WriteLine(strFormat); // Hello bikang, Today is 2021-12-16.
+
+            // 3. 문자열 보간 : $문자를 사용하여 문자열 변수의 값을 표현
+            string strInterpolation = $"Hello {userName}, Today is {date}.";
+            Console.WriteLine(strInterpolation); // Hello bikang, Today is 2021-12-16.
+
+            // 4. String.Concat()과 String.Join() 사용
+            string strConcat = String.Concat("Hello ", userName, ", Today is ", date, ".");
+            Console.WriteLine(strConcat); // Hello bikang, Today is 2021-12-16.
+
+            string[] animals = { "mouse", "cow", "tiger", "rabbit", "dragon" };
+            string s = String.Concat(animals);
+            Console.WriteLine(s); // mousecowtigerrabbitdragon
+            s = String.Join(", ", animals);
+            Console.WriteLine(s); // mouse, cow, tiger, rabbit, dragon
+        }
+    }
