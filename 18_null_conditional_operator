@@ -1,0 +1,28 @@
+using System;
+using System.Collections;
+using static System.Console;
+
+// null 조건부 연산자
+
+namespace _18_null_conditional_operator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList a = null; // a?.가 null을 반환하므로 Add() 메소드는 호출되지 않음
+            a?.Add("야구");
+            a?.Add("축구");
+            WriteLine($"Count : {a?.Count}"); // a?.가 null을 반환하므로 'Count :' 만 출력
+            WriteLine($"{a?[0]}");
+            WriteLine($"{a?[1]}");
+
+            a = new ArrayList(); // a는 더 이상 null이 아님
+            a?.Add("야구");
+            a?.Add("축구");
+            WriteLine($"Count : {a?.Count}"); // Count : 2
+            WriteLine($"{a?[0]}"); // 야구
+            WriteLine($"{a?[1]}"); // 축구
+        }
+    }
+}
