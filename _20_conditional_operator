@@ -1,0 +1,23 @@
+using System;
+
+namespace _20_conditional_operator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("정수를 입력하세요 : ");
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            string result = (input > 0) ? "양수입니다." : "음수입니다.";
+            Console.WriteLine($"{input}는 {result}");
+            Console.WriteLine("{0}는 {1}", input, (input % 2 == 0) ? "짝수입니다." : "홀수입니다.");
+
+            // 여러 개의 숫자를 쓸 떄 10개 마다 줄바꿈 할 경우
+            for (int i = 1; i <= 50; i++)
+            {
+                Console.Write("{0, 3}{1}", i, i % 10 != 0 ? "" : "\n");
+            }
+        }
+    }
+}
