@@ -1,0 +1,24 @@
+using System;
+
+namespace _13_split_method
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("더하고자하는 숫자들을 입력하세요: ");
+            string s = Console.ReadLine();
+            Console.WriteLine(s);
+
+            int sum = 0; // 합을 0으로 초기화
+            char[] delimiters = { ',', ' ', '-' };
+            string[] v = s.Split(delimiters); // 해당되는 구분자로 문자열을 분리해서 문자열 배열로 저장
+
+            foreach (var i in v)
+            {
+                sum += int.Parse(i); // 정수로 변경 후 더함
+            }
+            Console.WriteLine("결과는 {0}", sum);
+        }
+    }
+}
