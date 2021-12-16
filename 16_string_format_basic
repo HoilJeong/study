@@ -1,0 +1,23 @@
+using System;
+using static System.Console;
+
+// 문자열 서식 맞추기
+// {서식 항목의 첨자, 오른쪽/왼쪽 맞춤 }
+
+namespace _16_string_format_basic
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string fmt = "{0, -20}{1, -15}{2, 30}"; // 왼쪽 정렬 20칸, 왼쪽 정렬 15칸, 오른 정렬 30칸
+
+            WriteLine(fmt, "Publisher", "Author", "Title");
+            WriteLine(fmt, "Marvel", "Stan Lee", "Iron Man");
+            /*
+            Publisher           Author                                  Title
+            Marvel              Stan Lee                             Iron Man
+            */
+        }
+    }
+}
