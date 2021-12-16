@@ -1,0 +1,28 @@
+using System;
+
+namespace _11_using_var
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // var 키워드를 이용해서 변수를 선언하면 컴파일러가 자동으로 해당 변수의 형식을 지정
+            // var은 지역변수로만 사용 가능하고, 반드시 선언하면서 초기화해야 함.
+            var a = 20;
+            Console.WriteLine("Type: {0}, Value: {1}", a.GetType(), a); // Type: System.Int32, Value: 20
+
+            var b = 3.1414213;
+            Console.WriteLine("Type: {0}, Value: {1}", b.GetType(), b); // Type: System.Double, Value: 3.1414213
+
+            var c = "Hello, World";
+            Console.WriteLine("Type: {0}, Value: {1}", c.GetType(), c); // Type: System.String, Value: Hello, World
+
+            var d = new int[] { 10, 20, 30 };
+            Console.Write("Type: {0}, Value: ", d.GetType()); // Type: System.Int32[], Value:
+            foreach (var e in d)
+                Console.Write("{0} ", e); // 10 20 30
+
+            Console.WriteLine();
+        }
+    }
+}
