@@ -1,0 +1,46 @@
+using static System.Console;
+
+namespace _12_string_search
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string greeting = "Good Morning";
+
+            WriteLine(greeting);
+            WriteLine();
+
+            // IndexOf()
+            // 현재 문자열내에서 찾고자 하는 지정된 문자나 문자열의 위치를 찾음.
+            WriteLine("IndexOf 'Good' : {0}", greeting.IndexOf("Good")); // IndexOf 'Good' : 0
+            WriteLine("IndexOf 'o' : {0}", greeting.IndexOf('o')); // IndexOf 'o' : 1
+
+            // LateIndexOf()
+            // 현재 문자열내에서 찾고자 하는 지정된 문자나 문자열의 위치를 뒤에서부터 찾음. (인덱스는 동일)
+            WriteLine("LastIndexOf 'Good' : {0}", greeting.LastIndexOf("Good")); // LastIndexOf 'Good' : 0
+            WriteLine("LastIndexOf 'o' : {0}", greeting.LastIndexOf('o')); // LastIndexOf 'o' : 6
+
+            // StartWith()
+            // 현재 문자열에서 지정된 문자열로 시작하는지를 평가
+            WriteLine("StartWith 'Good' : {0}", greeting.StartsWith("Good")); // StartWith 'Good' : True
+            WriteLine("StartWith 'Morning' : {0}", greeting.StartsWith("Morning")); // StartWith 'Morning' : False
+
+            // EndWith()
+            // 현재 문자열에서 지정된 문자열로 끝나는지를 평가
+            WriteLine("EndWith 'Good' : {0}", greeting.EndsWith("Good")); // EndWith 'Good' : False
+            WriteLine("EndWith 'Morning' : {0}", greeting.EndsWith("Morning")); // EndWith 'Morning' : True
+
+            // Contains()
+            // 현재 문자열에서 지정된 문자열을 포함하는지를 평가
+            WriteLine("Contains 'Evening' : {0}", greeting.Contains("Evening")); // Contains 'Evening' : False
+            WriteLine("Contains 'Morning' : {0}", greeting.Contains("Morning")); // Contains 'Morning' : True
+
+            // Repalace()
+            // 현재 문자열에서 지정된 문자열이 다른 지정된 문자열로 모두 바뀐 새 문자열을 반환
+            WriteLine("Replaced 'Moring' with 'Evening': {0}",
+                greeting.Replace("Morning", "Evening"));
+            // Replaced 'Moring' with 'Evening': Good Evening
+        }
+    }
+}
