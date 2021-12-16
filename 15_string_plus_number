@@ -1,0 +1,27 @@
+using System;
+
+namespace _15_string_plus_number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(52 + 273); // 325
+            Console.WriteLine("52" + 273); // 52273
+            Console.WriteLine(52 + "273"); // 52273
+            Console.WriteLine("52" + "273"); // 52273
+
+            // 간단한 문자열 변환
+            // 문자열과 다른 자료형을 더하면 문자열 연결을 수행
+            // 빈 문자열을 더해주어 문자열로 변환하는 방법도 자주 사용됨
+            int number = 52273;
+            string outputA = number + "";
+            Console.WriteLine(outputA); // 52273
+
+            char character = 'a';
+            string outputB = character + "";
+            Console.WriteLine(outputB); // a
+            Console.WriteLine();
+        }
+    }
+}
