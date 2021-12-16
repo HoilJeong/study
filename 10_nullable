@@ -1,0 +1,27 @@
+using System;
+
+namespace _10_nullable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Nullable : 변수를 초기화하지 않은 상태, null인 상태를 유지
+            // 변수에게 할당된 메모리 공간을 비워둘 수 있는 형식
+            int? a = null; // Nullable 선언
+
+            // Nullable 형식은 HasValue, Value 두 가지 속성이 있음
+            // HasValue : 값이 있으면 True, null 이면 False
+            // Value : 변수에 담겨진 값
+
+            Console.WriteLine(a != null); // False // a는 null이므로 False 출력
+            Console.WriteLine(a != null); // False
+
+            a = 3;
+
+            Console.WriteLine(a.HasValue); // True
+            Console.WriteLine(a != null); // True
+            Console.WriteLine(a.Value); // 3
+        }
+    }
+}
