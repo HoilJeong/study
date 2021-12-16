@@ -1,0 +1,40 @@
+using System;
+
+// var 키워드
+
+// C#은 var 키워드로 변수의 자료형을 자동으로 지정
+
+// var 키워드의 조건
+// 지역 변수로 선언하는 경우
+// 변수를 선언과 동시에 초기화하는 경우
+
+namespace _17_var_keyword
+{
+    class Program
+    {
+        // 클래스의 전역 변수, 인스턴스 변수
+        // 오류가 발생
+        // var global = 52;
+
+        static void Main(string[] args)
+        {
+            // var 키워드의 선언과 초기화 동시 수행
+            var number = 1;
+
+            // var 키워드
+            var number1 = 100;
+
+            // var 키워드의 제약
+            // 오류가 발생
+            // 자료형과 다른 값으로 변경할 수 없음
+            var number2 = 10.2;
+            number2 = 20.1;
+            // number2 = "변경";
+
+            // var 키워드를 사용한 다양한 자료형 선언
+            var numberA = 100L; // long 자료형
+            var numberB = 100.0; // double 자료형
+            var numberC = 100.0F; // float 자료형
+        }
+    }
+}
