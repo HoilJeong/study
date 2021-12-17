@@ -1,0 +1,45 @@
+using System;
+
+// switch 식 (expression)
+
+// switch 문 (statement)의 차이
+
+// 1) switch 문의 조건식을 switch 키워드 앞으로 옮김
+// 2) case 와 ':'을 '=>'로 변경
+// 3) break; 는 불필요하며 각 케이스는 콤마(,)로 구분
+// 4) dafault 키워드는 '_'로 변경
+
+namespace _22_switch_exp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("점수를 입력하세요");
+            int score = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("재수강인가요? (y/n)");
+            string line = Console.ReadLine();
+            bool repeated = line == "y" ? true : false;
+
+            // Math.Truncate : 소수 부분을 자름
+            string grade = (int)(Math.Truncate(score / 10.0) * 10) switch
+            {
+                // swith식 바꾸는 법
+                // case : 은 => 으로
+                // break; 는 불필요
+                // 각 케이스는 ',' 로 구분
+                // default는 '_'로 바꿈
+
+                90 when repeated == true => "B+", // 재수강일 경우
+                90 => "A",
+                80 => "B",
+                70 => "C",
+                60 => "D",
+                _ => "F"
+            };
+
+            Console.WriteLine($"학점 : {grade}");
+        }
+    }
+}
