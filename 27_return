@@ -1,0 +1,23 @@
+using System;
+
+namespace _27_return
+{
+    class Program
+    {
+        static void PrintProfile(string name, string phone)
+        {
+            if (name == "")
+            {
+                Console.WriteLine("이름을 입력해주세요.");
+                return; // 이 후 부분은 실행이 안됨
+            }
+
+            Console.WriteLine($"Name: {name}, Phone: {phone}");
+        }
+        static void Main(string[] args)
+        {
+            PrintProfile("", "123-456");
+            PrintProfile("홍길동", "456-1230");
+        }
+    }
+}
