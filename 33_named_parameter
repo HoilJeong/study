@@ -1,0 +1,24 @@
+using System;
+
+// 명명된 인수 Named Argument
+// 대개의 경우 순서에 근거해서 매개변수에 인수를 할당하는 스타일을 사용하지만,
+// C#은 매서드를 호출할 때 이름에 근거해서 데이터를 할당할 수 있는 기능을 지원
+
+namespace _33_named_parameter
+{
+    class Program
+    {
+        static void PrintProfile(string name, string phone)
+        {
+            Console.WriteLine($"Name: {name}, Phone: {phone}");
+        }
+
+        static void Main(string[] args)
+        {
+            PrintProfile("박세리", "010-2222-2222");
+            PrintProfile("이승엽",  phone: "010-5678-5678");
+            PrintProfile(name: "박찬호", phone: "010-1234-1234");
+            PrintProfile(phone: "010-9876-9876", name: "박지성");
+        }
+    }
+}
