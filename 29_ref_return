@@ -1,0 +1,43 @@
+using System;
+
+// 메소드 결과를 참조로 반환하기
+// 참조 반환값을 이용하면 메소드의 호출자로 하여금 반환받은 결과를 참조로 다룰 수 있음.
+// ref 키워드를 이용해 메소드를 선언하고, return 문이 반환하는 변수 앞에도 ref 키워드를 명시해야 함.
+
+namespace _29_ref_return
+{
+    class Product
+    {
+        private int price = 100;
+
+        public ref int GetPrice() // ref 키워드를 이용해 메소드를 선언
+        {
+            return ref price; // return 문이 반환하는 변수 앞에도 ref 키워드를 명시
+        }
+
+        public void PrintPrice()
+        {
+            Console.WriteLine($"Price : {price}");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Product carrot = new Product();
+            ref int ref_loccal_price = ref carrot.GetPrice(); // ref_local_price를 수정하면 carrot.price의 내용도 바뀜
+            int normal_local_price = carrot.GetPrice();
+
+            carrot.PrintPrice();
+            Console.WriteLine($"Ref Local Price : {ref_loccal_price}"); // Ref Local Price : 100
+            Console.WriteLine($"Normal Local Price : {normal_local_price}"); // Normal Local Price : 100
+
+            ref_loccal_price = 200;
+
+            carrot.PrintPrice();
+            Console.WriteLine($"Ref Local Price : {ref_loccal_price}"); // Ref Local Price : 200
+            Console.WriteLine($"Normal Local Price : {normal_local_price}"); // Normal Local Price : 100
+        }
+    }
+}
