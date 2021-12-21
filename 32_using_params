@@ -1,0 +1,38 @@
+using System;
+
+// 가변 갯수의 인수
+// 그 갯수가 유연하게 변할 수 있는 인수
+// 가변 갯수의 인수는 params 키워드와 배열을 이용해서 선언
+
+namespace _32_using_params
+{
+    class Program
+    {
+        static int Sum(params int[] args) // Sum() 메소드에 입력한 모든 메소드는 args 배열에 담김
+        {
+            Console.Write("Summing... ");
+
+            int sum = 0;
+
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (i > 0)
+                    Console.Write(", ");
+
+                Console.Write(args[i]);
+
+                sum += args[i];
+            }
+            Console.WriteLine();
+
+            return sum;
+        }
+
+        static void Main(string[] args)
+        {
+            int sum = Sum(3, 4, 5, 6, 7, 8, 9, 10);
+
+            Console.WriteLine($"Sum : {sum}");
+        }
+    }
+}
