@@ -1,0 +1,61 @@
+using System;
+
+// 상속으로 코드 재활용하기
+
+namespace _38_inheritance
+{
+    class Base // 기반 클래스
+    {
+        protected string Name;
+
+        public Base(string Name)
+        {
+            this.Name = Name;
+            Console.WriteLine($"{this.Name}.Base()");
+        }
+
+        ~Base()
+        {
+            Console.WriteLine($"{this.Name}.~Base()");
+        }
+
+        public void BaseMethod()
+        {
+            Console.WriteLine($"{Name}.BaseMethod()");
+        }
+    }
+
+    class Derived : Base // 파생 클래스
+    {
+        // base 키워드(Base 클래스 이름과는 상관이 없음)를 통해 기반 클래스의 생성자 호출
+
+        public Derived(string Name) : base(Name)
+        {
+            this.Name = Name;
+            Console.WriteLine($"{this.Name}.Derived()");
+        }
+
+        ~Derived()
+        {
+            Console.WriteLine($"{this.Name}.~Derived()");
+        }
+
+        public void DerivedMethod()
+        {
+            Console.WriteLine($"{Name}.DerivedMethod()");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Base a = new Base("a");
+            a.BaseMethod();
+
+            Derived b = new Derived("b");
+            b.BaseMethod();
+            b.DerivedMethod();
+        }
+    }
+}
