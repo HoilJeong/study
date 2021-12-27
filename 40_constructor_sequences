@@ -1,0 +1,89 @@
+using System;
+
+// 상속의 생성자
+
+namespace _40_constructor_sequences
+{
+    // 상속 떄의 기본적인 생성자 호출 순서
+    // 자식 인스턴스를 생성하면, 부모가 가지고 있는 멤버 초기화를 위해
+    // 부모 생성자도 자동으로 호출
+
+    namespace A
+    {
+        class Parent
+        {
+            public Parent()
+            {
+                Console.WriteLine("부모 생성자");
+            }
+        }
+
+        class Child : Parent
+        { 
+            public Child()
+            {
+                Console.WriteLine("자식 생성자");
+            }
+        }
+    }
+
+    // base 키워드를 사용한 생성자 지정
+    // 만약 부모 생성자 호출을 명시적으로 지정하고 싶을 때 base 키워드를 사용
+    namespace B
+    { 
+        class Parent
+        {
+            public Parent()
+            {
+                Console.WriteLine("부모 생성자");
+            }
+        }
+
+        class Child : Parent
+        {
+            public Child() : base() // base 키워드 사용
+            {
+                Console.WriteLine("자식 생성자");
+            }
+        }
+    }
+
+    // base 키워드를 사용한 생성자 지정(2)
+    namespace C
+    {
+        class Parent
+        {
+            public Parent() { Console.WriteLine("Parent()"); }
+            public Parent(int param) { Console.WriteLine("Parent(int param)"); }
+            public Parent(string param) { Console.WriteLine("Parent(string param)"); }
+        }
+
+        class Child : Parent
+        {
+            public Child() : base(10)
+            {
+                Console.WriteLine("Child() : base(10)");
+            }
+            public Child(string input) : base(input)
+            {
+                Console.WriteLine("Child(string input) : base(input)");
+            }
+        }
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            A.Child childA = new A.Child();
+            Console.WriteLine();
+
+            B.Child childB = new B.Child();
+            Console.WriteLine();
+
+            C.Child childC = new C.Child(); // Parent(int param) Child() : base(10)
+            C.Child childC2 = new C.Child("string"); // Parent(string param) Child(string input) : base(input)
+        }
+    }
+}
