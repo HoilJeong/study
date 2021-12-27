@@ -1,0 +1,65 @@
+using System;
+
+// 기반 클래스와 파생 클래스 사이의 형식 변환
+// is 와 as
+// is : 객체가 해당 형식에 해당하는지 검사하여 그 결과를 bool 값으로 반환
+// as : 형식 변환 연산자와 같은 역할을 한다. 다만 형식 변환 연산자가 변환에 실패하는 경우
+// 예외를 던지는 반면에 as 연산자는 객체 참조를 null로 만든다
+42_type_casting
+namespace _
+{
+    class Mammal
+    {
+        public void Nurse()
+        {
+            Console.WriteLine("Nurse()");
+        }
+    }
+
+    class Dog : Mammal
+    {
+        public void Bark()
+        {
+            Console.WriteLine("Bark()");
+        }
+    }
+
+    class Cat : Mammal
+    {
+        public void Meow()
+        {
+            Console.WriteLine("Meow()");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Mammal mammal;
+            mammal = new Dog();
+            Dog dog;
+
+            // is : 객체가 해당 형식에 해당하는지 검사하여 그 결과를 bool 값으로 반환
+            if (mammal is Dog) // mammal 객체가 Dog 형식임을 확인
+            {
+                dog = (Dog)mammal; // 안전하게 형 변환
+                dog.Bark();
+            }
+
+            Mammal mammal2 = new Cat();
+
+            // as : 형식 변환 연산자와 같은 역할을 한다. 다만 형식 변환 연산자가 변환에 실패하는 경우
+            // 예외를 던지는 반면에 as 연산자는 객체 참조를 null로 만든다
+            Cat cat = mammal2 as Cat; // mammal2 객체를 Cat 형식으로 변환 : 성공
+            if (cat != null) // 참
+                cat.Meow();
+
+            Cat cat2 = mammal as Cat; // mammal2 객체를 Cat 형식으로 변환 : 실패
+            if (cat2 != null) // 거짓
+                cat2.Meow();
+            else
+                Console.WriteLine("cat2 is not a Cat");
+        }
+    }
+}
