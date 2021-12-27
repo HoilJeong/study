@@ -1,0 +1,37 @@
+using System;
+
+namespace _41_class_variable_on_inheritance
+{
+    class Parent
+    {
+        public static int counter = 0; // 클래스 변수 선언
+
+        public void CountParent()
+        {
+            Parent.counter++;
+        }
+    }
+
+    class Child : Parent
+    {
+        public void CountChild()
+        {
+            Child.counter++; // Child 클래스의 counter 변수를 증가
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Parent parent = new Parent();
+            Child child = new Child();
+
+            parent.CountParent();
+            child.CountChild();
+
+            Console.WriteLine(Parent.counter); // 2
+            Console.WriteLine(Child.counter); // 2
+        }
+    }
+}
